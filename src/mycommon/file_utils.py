@@ -5,7 +5,7 @@
 # Description: 文件处理基本函数
 #
 # Create on:   2018/6/9 17:24
-# Author:      yangmeng(eyangmeng@163.com)
+# Author:      Marvin
 # -------------------------------#
 
 import json

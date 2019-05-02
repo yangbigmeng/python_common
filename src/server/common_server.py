@@ -1,22 +1,23 @@
 #!/usr/bin/python
-#-*-coding:utf-8-*-
-#-------------------------------#
+# -*-coding:utf-8-*-
+# -------------------------------#
 # FileName:    CommonServer.py
 # Description:
 # Create on:   2018/6/9 18:12
-# Author:      yangmeng(eyangmeng@163.com)
-#-------------------------------#
+# Author:      Marvin Yang
+# -------------------------------#
+import logging
 import os
 import sys
-import json
-import types
 import time
-import logging
 import traceback
+
 import tornado.ioloop
 import tornado.web
 from tornado.escape import json_encode
+
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../")
+
 from service.common_handler import CommonHandler
 from mysetting import COMMON_SERVER_PORT
 
@@ -47,6 +48,7 @@ class JsonEncoder(object):
         """
         header = {"cost_time": cost_time, "msg": msg, "status": -1, "response": result}
         return json_encode(header)
+
 
 class Handler(tornado.web.RequestHandler):
     def initialize(self, handler):

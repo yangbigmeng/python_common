@@ -1,11 +1,11 @@
 #!/usr/bin/python
-#-*-coding:utf-8-*-
-#-------------------------------#
+# -*-coding:utf-8-*-
+# -------------------------------#
 # FileName:    string_util.py
 # Description: 字符串处理函数
 #
-# Author:      yangmeng(eyangmeng@163.com)
-#-------------------------------#
+# Author:      Marvin Yang
+# -------------------------------#
 
 import types
 

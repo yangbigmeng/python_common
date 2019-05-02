@@ -1,12 +1,12 @@
 #!/usr/bin/python
-#-*-coding:utf-8-*-
-#-------------------------------#
+# -*-coding:utf-8-*-
+# -------------------------------#
 # FileName:    TimeUtils.py
 # Description: 时间基本处理函数
 #
 # Create on:   2018/6/9 17:23
-# Author:      yangmeng(eyangmeng@163.com)
-#-------------------------------#
+# Author:      Marvin Yang
+# -------------------------------#
 
 import time
 import types

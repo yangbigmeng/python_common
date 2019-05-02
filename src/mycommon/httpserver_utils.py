@@ -1,12 +1,12 @@
 #!/usr/bin/python
-#-*-coding:utf-8-*-
-#-------------------------------#
+# -*-coding:utf-8-*-
+# -------------------------------#
 # FileName:    HttpserverUtils.py
 # Description: httpserver 基本操作
 # 
 # Create on:   2018/6/9 19:44
-# Author:      yangmeng(eyangmeng@163.com)
-#-------------------------------#
+# Author:      Marvin Yang
+# -------------------------------#
 
 import json
 import logging

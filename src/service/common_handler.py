@@ -1,12 +1,12 @@
 #!/usr/bin/python
-#-*-coding:utf-8-*-
-#-------------------------------#
+# -*-coding:utf-8-*-
+# -------------------------------#
 # FileName:    common_handler.py
 # Description: 基本处理handler
 #
 # Create on:   2018/6/9 18:10
-# Author:      yangmeng(eyangmeng@163.com)
-#-------------------------------#
+# Author:      Marvin Yang
+# -------------------------------#
 
 import os
 import sys
