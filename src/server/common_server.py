@@ -159,6 +159,9 @@ class CommonServer(object):
 
 
 if __name__ == "__main__":
+    DEFAULT_LOG_FORMAT = '[%(asctime)s] [%(filename)s] [%(lineno)d] [%(levelname)s] [%(message)s]'
+    logging.basicConfig(filename='server.log', level=logging.INFO, format=DEFAULT_LOG_FORMAT, )
+
     env_type = "TEST"
     if len(sys.argv) > 1:
         env_type = sys.argv[0]
