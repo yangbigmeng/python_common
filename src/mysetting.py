@@ -9,4 +9,4 @@
 # -------------------------------#
 
 # common server
-COMMON_SERVER_PORT = 12358
+COMMON_SERVER_PORT = 9090

@@ -8,11 +8,9 @@
 # Author:      Marvin Yang
 # -------------------------------#
 
+import logging
 import os
 import sys
-import json
-import types
-import logging
 import traceback
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../")
@@ -23,10 +21,12 @@ class CommonHandler(object):
     def __init__(self, env="TEST"):
         self.env = env
 
-    def load(self):
+    @staticmethod
+    def load():
         return True, "ok"
 
-    def time2timestamp_process(self, time_str):
+    @staticmethod
+    def time2timestamp_process(time_str):
         """
         时间字符串转换为时间戳
 
@@ -37,7 +37,8 @@ class CommonHandler(object):
             return None
         return {"timestamp": TimeUtils.time2timestamp(str(time_str))}
 
-    def timestamp2time_process(self, timestamp):
+    @staticmethod
+    def timestamp2time_process(timestamp):
         """
         时间戳转换为时间字符串
 
@@ -60,8 +61,7 @@ class CommonHandler(object):
         """
         function_name = "%s_process" % process_type
         try:
-            function = getattr(self, function_name)
-            return True, function(params)
+            return True, getattr(self, function_name)(params)
         except Exception as e:
             logging.error(traceback.format_exc())
             return False, str(e)
@@ -75,6 +75,6 @@ if __name__ == "__main__":
     print obj.load()
 
     # test
-    time_str = "2018-06-09 17:44:45"
+    u_time_str = "2018-06-09 17:44:45"
     pro_type = "time2timestamp"
-    print obj.process(time_str, pro_type)
+    print obj.process(u_time_str, pro_type)
